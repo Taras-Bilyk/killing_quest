@@ -1,0 +1,264 @@
+@font-face {
+    font-family: "Bitcount Grid Double";
+    src: url('../fonts/Bitcount_Grid_Double/BitcountGridDouble_Roman-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Libre Barcode";
+    src: url('../fonts/Libre_Barcode_39_Extended_Text/LibreBarcode39ExtendedText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Special Elite";
+    src: url('../fonts/Special_Elite/SpecialElite-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 100px;
+    text-align: center;
+    color: #000;
+    font-family: "Libre Barcode", sans-serif;
+    line-height: 50px;
+    animation: black_blink 0.3s steps(1, end) forwards;
+}
+.form_with_letters{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.form_with_letters input{
+    display: block;
+    margin: 0 auto;
+    caret-color: transparent;
+    color: #000;
+    padding: 20px 20px;
+    padding-bottom: 10px;
+    width: 25px;
+    font-size: 20px;
+    font-family: "Special Elite", sans-serif;
+    border: 3px solid #000;
+    font-weight: bold;
+    animation: black_blink_for_sym_in 0.3s steps(1, end) forwards;
+}
+.form_with_letters input::placeholder{
+    color: #000;
+    opacity: 1;
+}
+.form_with_letters .submit_letters_button{
+    width: 120px;
+    margin: 0;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.form_with_letters .submit_letters_button:hover{
+    background-color: #000 !important;
+    color: #fff !important;
+    cursor: pointer !important;
+}
+.div_with_tips{
+    margin-bottom: 100px;
+}
+.div_with_tips img{
+    width: 30%;
+}
+.div_with_word form{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin: 0 auto;
+}
+.div_with_word input{
+    background-color: #fff;
+    caret-color: transparent;
+    padding: 20px 20px;
+    padding-bottom: 10px;
+    width: calc(100% - 46px);
+    font-size: 20px;
+    font-family: "Special Elite", sans-serif;
+    border: 3px solid #000;
+    font-weight: bold;
+    animation: black_blink_for_sym_in 0.3s steps(1, end) forwards;
+ }
+ .div_with_word input::placeholder{
+    color: #000;
+    opacity: 1;
+    animation: white_blink_ph 0.3s steps(1, end) forwards;
+ }
+.div_with_word .submit_word_button{
+    width: 120px;
+    margin: 0;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.div_with_word .submit_word_button:hover{
+    background-color: #000 !important;
+    color: #fff !important;
+    cursor: pointer !important;
+}
+.div_with_promokod_text{
+    margin: 0 auto;
+    width: 50%;
+    font-size: 30px;
+}
+.see_the_code_button{
+    background-color: #fff;
+    padding: 20px 50px;
+    font-size: 30px;
+    font-family: "Special Elite", sans-serif;
+    border: 3px solid #000;
+    color: #000;
+    animation: black_blink_for_sym_in 0.3s steps(1, end) forwards;
+}
+.see_the_code_button:hover{
+    background-color: #000 !important;
+    color: #fff !important;
+    cursor: pointer !important;
+}
+.div_vith_texts_on_spg{
+    margin-bottom: 200px;
+}
+.current_sym{
+    position: relative;
+    display: inline-block;
+}
+.current_sym::before{
+    content: "";
+    position: absolute;
+    background-color: #000;
+    left: 0;
+    top: 120%;
+    height: 3px;
+    width: 100%;
+    z-index: 2;
+    animation: white_blink 0.3s steps(1, end) forwards;
+}
+.first_sy{
+    position: relative;
+}
+.first_sy::before{
+    position: absolute;
+    content: "#";
+    font-family: "Special Elite", sans-serif;
+    font-size: 80px;
+    line-height: 80px;
+    color: #fff;
+    top: 0;
+    left: -100px;
+    z-index: 3;
+
+}
+
+
+.agree_buttons_div p,
+.text_on_agreement{
+    margin-bottom: 200px;
+    font-size: 25px;
+}
+.accept_and_continue_button,
+.back_to_index_button{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    background-color: #fff;
+    border: 2px solid #000;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+    animation: black_blink_for_sym_in 0.3s steps(1, end) forwards;
+}
+.accept_and_continue_button:hover,
+.back_to_index_button:hover{
+    color: #fff !important;
+    background-color: #000 !important;
+}
+.tead_the_agreement_button{
+    display: inline-block;
+    color: #000;
+    font-size: 25px;
+    animation: black_blink_for_sym_in 0.3s steps(1, end) forwards;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes black_blink{
+  0% { background-color: #000; color: #fff; }
+  100% { background-color: #fff; color: #000; }
+}
+@keyframes white_blink{
+  0% { background-color: #fff; }
+  100% { background-color: #000; }
+}
+@keyframes white_blink_ph{
+  0% { color: #fff; }
+  100% { color: #000; }
+}
+@keyframes black_blink_for_sym_in{
+  0% {
+    background-color: #000;
+    border-color: #fff;
+    color: #fff;
+    }
+  100% {
+    background-color: #fff;
+    border-color: #000;
+    color: #000;
+    }
+}
